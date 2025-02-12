@@ -1,0 +1,154 @@
+/* Stilet e Përgjithshme */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+/* Kontejneri Kryesor */
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+/* Titulli Kryesor */
+.main-title {
+    font-size: 3.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+/* Layout i Kutive */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+/* Kutitë */
+.box {
+    border: 3px solid black;
+    padding: 50px 30px;
+    min-height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efekti Hover */
+.box:hover {
+    transform: scale(1.03);
+    background-color: #f8f8f8;
+}
+
+/* Titulli i Kutisë */
+.box h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Përshkrimi në Kuti */
+.box p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 85%;
+}
+
+/* Titulli në Fund */
+.footer-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+
+/* Seksioni i Poshtëm */
+.bottom-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+/* Kutitë me Imazhe */
+.colored-box {
+    width: 160px;  /* E zvogëluam pak permasën e kutive */
+    height: 200px; /* Të njëjtat përmasa për lartësinë */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white; /* Teksti do të jetë i bardhë për kontrast me fotot */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efekti Hover */
+.colored-box:hover {
+    transform: scale(1.05);
+}
+
+/* Përshtatja e fotove */
+.colored-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Fotoja do të mbushë plotësisht konteinerin, mund të pritet, por nuk do të deformohet */
+}
+
+/* Ngjyrat */
+.blue { background-color: #4A90E2; }
+.yellow { background-color: #F5A623; }
+.green { background-color: #7ED321; }
+.red { background-color: #D0021B; }
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .bottom-section {
+        flex-wrap: wrap;
+    }
+    .colored-box {
+        width: 150px;
+        height: 180px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .colored-box {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    /* Reduce font size for mobile */
+    .footer-title {
+        font-size: 2.5rem;
+    }
+
+    .main-title {
+        font-size: 2.5rem;
+    }
+
+    .box h3 {
+        font-size: 1.2rem;
+    }
+}
