@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+/* Testimonial Section */
+.testimonial {
+    background: white;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.testimonial-img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+}
+
+.arrows button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Logos Section */
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.logos img {
+    max-width: 100px;
+}
+
+/* FAQ Section */
+.faq {
+    background: white;
+    padding: 40px;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.faq-item {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.faq-question {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 5px;
+}
