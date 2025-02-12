@@ -1,13 +1,51 @@
 <!DOCTYPE html>
-<html lang="sq">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faqja Ime</title>
+    <title>Testimonial & FAQ Section</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Përshëndetje, kjo është një faqe HTML!</h1>
-    <p>Kjo është një pargraf i thjeshtë.</p>
-    <a href="https://www.example.com">Kliko këtu</a>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+        <div class="testimonial-content">
+            <img src="pics/Njeri.jpg"User Photo" class="testimonial-img">
+            <blockquote>
+                <p>From the initial meeting to the final delivery, Ethan has created a feeling of trust and delivered everything we asked of him...</p>
+                <cite>- Client Name</cite>
+            </blockquote>
+        </div>
+        <div class="arrows">
+            <button id="prev">←</button>
+            <button id="next">→</button>
+        </div>
+    </section>
+
+    <!-- Logos Section -->
+    <section class="logos">
+        <img src="pics/Hunter.png" alt="Hunter Team">
+        <img src="pics/nuu.png" alt="Nuu">
+        <img src="pics/yahoo.png" alt="Yahoo">
+        <img src="pics/Huston.png" alt="Houston">
+        <img src="pics/Nami.png" alt="NAMI">
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>COMMON QUESTIONS</h2>
+        <p>If you have any questions, here are some answers:</p>
+        <div class="faq-item">
+            <button class="faq-question">Do you do web design or web development?</button>
+            <div class="faq-answer">Yes, we offer both services...</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">How long does it take?</button>
+            <div class="faq-answer">Typically, projects take 4-6 weeks...</div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
